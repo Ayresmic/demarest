@@ -1,0 +1,227 @@
+/*	============================================================
+	global
+	============================================================	*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+a img {
+    display: block;
+}
+
+sup {
+    font-size: 16px;
+    line-height: 0;
+    vertical-align: super;
+}
+
+/*	============================================================
+	header
+	============================================================	*/
+
+header {
+    padding: 30px 0 0 0;
+    text-align: center;
+    width: 100%
+}
+
+a.logo-header {
+    background: url(images/logo-the-goat.png) no-repeat;
+    display: inline-block;
+    height: 59px;
+    width: 255px;
+}
+
+.pull-menu {
+    background: url(images/icon-menu.png) no-repeat center center;
+    border: 2px solid #fff;
+    border-right: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    height: 59px;
+    margin: 0 -3px 0 0;
+    width: 51px;
+}
+
+/*	============================================================
+	main
+	============================================================	*/
+
+main {
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+.container-video {
+    padding: 30px 0 0 0;
+}
+
+.container-punchline {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding: 50px 0 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container-mailchimp .form-group {
+    text-align: center;
+}
+
+.container-mailchimp input[type="email"] {
+    background: none;
+    box-sizing: border-box;
+    border: 1px solid #454545;
+    border-radius: 0px;
+    color: #CCC;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 0 15px 0;
+    padding: 15px;
+    width: 400px;
+}
+
+.button {
+    background: #000;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    padding: 12px 20px 13px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all linear 0.2s;
+    -webkit-appearance: none;
+}
+
+.button:hover {
+    background: #fff;
+    color: #000;
+}
+
+#container-social-media {
+    padding: 15px 0 0 0;
+    text-align: center;
+}
+
+#container-social-media .instagram {
+    background: url(images/icon-instagram.png) no-repeat center center;
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+}
+
+/*	============================================================
+	footer
+	============================================================	*/
+
+footer {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 15px 0 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*	============================================================
+	background particles
+	============================================================	*/
+
+#bg-particles {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+canvas {
+    height: 100vh;
+    width: 100%;
+}
+
+/*	============================================================
+	responsive
+	============================================================	*/
+
+@media only screen and (max-width: 767px) {
+
+    .container-punchline {
+        font-size: 18px;
+        padding: 30px 0 15px 0;
+    }
+
+    .container-mailchimp input[type="email"] {
+        width: 100%;
+    }
+
+    .animated {
+
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+    .logo-header a {
+        background: url(images/logo-the-goat-2x.png) no-repeat;
+        background-size: 255px 59px;
+    }
+
+}
